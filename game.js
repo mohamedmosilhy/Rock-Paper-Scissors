@@ -7,42 +7,73 @@ function playRound(playerSelection, computerSelection){
 
     if(playerSelection === "rock" && computerSelection === "scissors")
     {
-        return "You Win! Rock beats Scissors"
+        return "player";
     }
     
     else if(playerSelection === "rock" && computerSelection === "paper")
     {
-        return "You Lose! Paper beats Rock"
+        return "computer";
     }
-    
+
     else if(playerSelection === "scissors" && computerSelection === "rock")
     {
-        return "You Lose! Rock beats Scissors"
+        return "computer";
     }
     
     else if(playerSelection === "scissors" && computerSelection === "paper")
     {
-        return "You Win! Scissors beats Paper"
+        return "player";
     }
 
     else if(playerSelection === "paper" && computerSelection === "rock")
     {
-        return "You Win! Rock beats Scissors"
+        return "player";
     }
     
     else if(playerSelection === "paper" && computerSelection === "scissors")
     {
-        return "You Lose! Scissors beats Paper"
+        return "computer";
     }
 
     else
     {
-        return "it's a tie"
+        return "it's a tie";
+    }
+}
+
+function game(){
+    let playerSelection;
+    let computerSelection;
+    let roundResult;
+    let playerScore = 0,computerScore = 0;
+
+    for (let i = 0; i < 5; i++) {
+        playerSelection = prompt("enter your choice").toLowerCase();
+        computerSelection = getComputerChoice().toLowerCase();
+        roundResult = playRound(playerSelection,computerSelection);
+
+        if(roundResult === "player"){
+            playerScore++;
+        }
+        else if(roundResult === "computer"){
+            computerScore++;
+        }
+        console.log(roundResult)
+    }
+
+    if(playerScore > computerScore)
+    {
+        return "player is the winner.";
+    }
+    else if(playerScore < computerScore)
+    {
+        return "computer is the winner.";
+    }
+    else
+    {
+        return "it's a tie.";
     }
 }
 
 
-
-const playerSelection = "rock".toLowerCase();
-const computerSelection = getComputerChoice().toLowerCase();
-console.log(playRound(playerSelection, computerSelection));
+console.log(game());
