@@ -3,11 +3,46 @@
     <head>
         <meta charset="utf-8">
         <title>Rock Paper Scissors</title>
-        <script src="game.js"></script>
+        <script src="game.js" defer></script>
+        <link href="style.css" rel="stylesheet">
     </head>
 
     <body>
         <h1>Rock Paper Scissors</h1>
+        <div>
+            <button class="rock">Rock</button>
+            <button class="paper">Paper</button>
+            <button class="scissors">Scissors</button>
+        </div>
+        <div class="choice">
+            <div class="playerChoiceDiv">
+                <p>player choice:&nbsp;</p>
+                <p class="playerChoice"></p>
+            </div>
+            
+            <div class="comChoiceDiv">
+                <p>computer choice:&nbsp;</p>
+                <p class="comChoice"></p>
+            </div>
+        </div>
+
+        <div class="score">
+            <div>
+                <p>player score:&nbsp;</p>
+                <p class="playerScore">0</p>
+            </div>
+            
+            <div>
+                <p>computer score:&nbsp;</p>
+                <p class="comScore">0</p>
+            </div>
+        </div>
+
+
+        <div class="resultDiv"> 
+            <p>Result</p>
+            <p class="result"></p>
+        </div>
     </body>
 
 </html>
