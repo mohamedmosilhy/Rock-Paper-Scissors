@@ -8,3 +8,8 @@ a webpage Rock-Paper-Scissors game in it you can play against the computer.
 - basic javascript concepts
 - DOM Manipulation and Events
 - basic css concepts
+
+
+
+## Visit The Site
+-https://mohamedmosilhy.github.io/Rock-Paper-Scissors/
