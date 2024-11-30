@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8">
         <title>Rock Paper Scissors</title>
@@ -8,41 +9,53 @@
     </head>
 
     <body>
-        <h1>Rock Paper Scissors</h1>
-        <div>
-            <button class="rock">Rock</button>
-            <button class="paper">Paper</button>
-            <button class="scissors">Scissors</button>
-        </div>
-        <div class="choice">
-            <div class="playerChoiceDiv">
-                <p>player choice:&nbsp;</p>
-                <p class="playerChoice"></p>
-            </div>
-            
-            <div class="comChoiceDiv">
-                <p>computer choice:&nbsp;</p>
-                <p class="comChoice"></p>
-            </div>
-        </div>
-
-        <div class="score">
+        <div class="container">
+            <h1>Rock Paper Scissors</h1>
+            <hr>
             <div>
-                <p>player score:&nbsp;</p>
-                <p class="playerScore">0</p>
+                <button class="rock">Rock</button>
+                <button class="paper">Paper</button>
+                <button class="scissors">Scissors</button>
             </div>
-            
-            <div>
-                <p>computer score:&nbsp;</p>
-                <p class="comScore">0</p>
+            <hr>
+            <div class="choice">
+                <div class="playerChoiceDiv">
+                    <p>player choice:&nbsp;
+                        <span class="playerChoice"></span>
+                    </p>
+
+                </div>
+
+                <div class="comChoiceDiv">
+                    <p>computer choice:&nbsp;
+                        <span class="comChoice"></span>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="score">
+                <div>
+                    <p>player score:&nbsp;
+                        <span class="playerScore">0</span>
+                    </p>
+                </div>
+
+                <div>
+                    <p>computer score:&nbsp;
+                        <span class="comScore">0</span>
+                    </p>
+
+                </div>
+            </div>
+
+            <hr>
+            <div class="resultDiv">
+                <p>Result</p>
+                <p class="result"></p>
             </div>
         </div>
 
-
-        <div class="resultDiv"> 
-            <p>Result</p>
-            <p class="result"></p>
-        </div>
     </body>
 
 </html>
